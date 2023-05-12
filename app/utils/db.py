@@ -8,7 +8,7 @@ class Db:
 
     
     CREATE TABLE py(
-        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `id` INTEGER PRIMARY KEY AUTOINCREMENT,
         `task` TEXT NOT NULL,
         `done` BOOLEAN
     ); 
@@ -19,9 +19,17 @@ class Db:
         self.connection = sqlite3.connect("db/db.sqlite")
         self.cursor = self.connection.cursor()
 
-    def selectall(self):
+    def list(self):
         res = self.cursor.execute("SELECT * FROM py")
         return res.fetchall()
     
     def add(self, task):
         
+        self.cursor.execute("INSERT INTO py(`id`, `task`, `done`) VALUES(NULL, ?, ?)", (task, 0))
+        self.connection.commit()
+
+
+
+
+if __name__ == "__main__":
+    print("This is part of the TODO List app and is a module used by the main.py file.")
