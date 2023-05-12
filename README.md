@@ -16,3 +16,11 @@
 # TUI Mode
 
 ![TUImode](https://github.com/NullBrunk/TODO/assets/125673909/c18a6ac3-1908-4252-a3c2-ceb332511733)
+
+# Installation
+
+```bash
+git clone https://github.com/NullBrunk/PyTodo
+cd PyTodo
+chmod +x install.sh && ./install.sh
+```
