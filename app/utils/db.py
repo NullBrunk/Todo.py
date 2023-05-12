@@ -16,8 +16,7 @@ class Db:
     """
 
     def __init__(self):
-        
-        self.connection = sqlite3.connect("db/db.sqlite")
+        self.connection = sqlite3.connect(__file__.replace('db.py', '') + "../db/db.sqlite")
         self.cursor = self.connection.cursor()
 
     def list(self) -> list:
@@ -34,6 +33,14 @@ class Db:
         )
         
         self.connection.commit()
+
+    def mark(self, id: str) -> None:
+        self.cursor.execute(
+            "UPDATE py SET done=1 WHERE id=?", 
+            (id), 
+        )
+        self.connection.commit()
+
 
     def rm(self, id: str) -> None:
         self.cursor.execute(

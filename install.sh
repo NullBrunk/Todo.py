@@ -1,4 +1,4 @@
-pip3 install termcolor questionary 
+pip3 install termcolor questionary sty
 
 cd app
 

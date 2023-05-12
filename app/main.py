@@ -1,16 +1,25 @@
-from utils.help import h, addhelp, rmhelp
 from utils.db import Db as sql
 from termcolor import colored
-from sys import argv, exit
+from utils.help import *
+from sty import ef, rs
+from sys import argv
 import questionary
 
 
 def ls(tasks: list):
     if len(tasks) == 0:
         print("No tasks !")
+
     else:
-        for i in tasks:
-            print(i)
+        for task in tasks:
+
+            print(f"{colored(task[0], 'blue', attrs=['bold'])}: ", end="")
+
+            if task[2] == 1:
+                print(ef.strike + task[1] + rs.all)
+            else:
+                print(task[1])
+
 
 def main(argv):
     
@@ -29,6 +38,12 @@ def main(argv):
                     db.add(argv[1])
                 except IndexError:
                     addhelp()
+
+            case "mark":
+                try:
+                    db.mark(argv[1])
+                except IndexError:
+                    mkhelp()   
 
             case "rm":
                 try:

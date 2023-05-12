@@ -17,7 +17,8 @@ def h():
 ┼───────────────────────────┼
 │                           │ 
 │   {colored('main.py', 'white', attrs=["bold"])} {colored('list', 'red', attrs=["bold"])}            │
-│   {colored('main.py', 'white', attrs=["bold"])} {colored('add', 'red', attrs=["bold"])}             │    
+│   {colored('main.py', 'white', attrs=["bold"])} {colored('add', 'red', attrs=["bold"])}             │
+│   {colored('main.py', 'white', attrs=["bold"])} {colored('mark', 'red', attrs=["bold"])}            │    
 │   {colored('main.py', 'white', attrs=["bold"])} {colored('rm', 'red', attrs=["bold"])}              │
 │                           │
 ┴───────────────────────────┴
@@ -32,6 +33,12 @@ def addhelp():
 def rmhelp():
     print(f"""\n┬──────────────────────────────┬
 │      {colored("./main.py", 'white')} {colored("rm", 'red', attrs=["bold"])} ID         │ 
+┴──────────────────────────────┴
+    """)
+
+def mkhelp():
+    print(f"""\n┬──────────────────────────────┬
+│     {colored("./main.py", 'white')} {colored("mark", 'red', attrs=["bold"])} ID        │ 
 ┴──────────────────────────────┴
     """)
 
