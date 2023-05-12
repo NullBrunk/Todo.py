@@ -16,20 +16,31 @@ class Db:
     """
 
     def __init__(self):
+        
         self.connection = sqlite3.connect("db/db.sqlite")
         self.cursor = self.connection.cursor()
 
-    def list(self):
+    def list(self) -> list:
         res = self.cursor.execute("SELECT * FROM py")
         return res.fetchall()
-    
-    def add(self, task):
         
-        self.cursor.execute("INSERT INTO py(`id`, `task`, `done`) VALUES(NULL, ?, ?)", (task, 0))
+
+
+    def add(self, task: str) -> None:
+        
+        self.cursor.execute(
+            "INSERT INTO py(`id`, `task`, `done`) VALUES(NULL, ?, ?)", 
+            (task, 0)
+        )
+        
         self.connection.commit()
 
-    def rm(self, id):
-        self.cursor.execute("DELETE FROM py WHERE id=?", (str(id)))
+    def rm(self, id: str) -> None:
+        self.cursor.execute(
+            "DELETE FROM py WHERE id=?", 
+            (id), 
+        )
+        
         self.connection.commit()
 
 
