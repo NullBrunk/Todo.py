@@ -50,6 +50,13 @@ class Db:
         
         self.connection.commit()
 
+    def getidbyelement(self, element:str) -> int:
+        id = self.cursor.execute(
+            "SELECT `id` FROM `py` WHERE task=?", 
+            (element,), 
+        )
+        return id.fetchone()
+        
 
 
 if __name__ == "__main__":

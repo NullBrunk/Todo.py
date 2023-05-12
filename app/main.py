@@ -2,6 +2,7 @@ from utils.db import Db as sql
 from termcolor import colored
 from utils.help import *
 from sty import ef, rs
+from os import system
 from sys import argv
 import questionary
 
@@ -20,14 +21,70 @@ def ls(tasks: list):
             else:
                 print(task[1])
 
+def showchoices(db) -> str:
+    return questionary.select(
+        " ",
+        instruction="  ",
+        choices=[i[1] for i in db.list()],
+        qmark=" "
+    ).ask()
+
+def tuimode(db):
+
+    while True:
+        q = questionary.select(
+            " ",
+            instruction="  ",
+            choices=[
+                "Add",
+                "List",
+                "Mark",
+                "Remove",
+                "Quit"
+            ],
+            qmark=" "
+        ).ask()
+
+        system("clear || cls")
+
+        match q:
+            case "Add":
+                db.add(input(": "))
+            case "List":
+                ls(db.list())
+            
+            case "Mark":        
+                db.mark(str(db.getidbyelement(showchoices(db))[0]))
+
+            case "Remove":
+                db.rm(str(db.getidbyelement(showchoices(db))[0]))
+            
+            case "Quit":
+                break
+            
+
+
+
+    """
+    
+    
+    directory = questionary.select(
+        " ",
+        instruction="  ",
+        choices=t,
+        qmark=" "
+    ).ask()
+"""
+
 
 def main(argv):
     
     db = sql()
     
     if not argv:
-        pass
-        # TUI MODE
+        system("clear || cls")
+        tuimode(db)
+    
     else:
         match argv[0].lower():
             case "list":
