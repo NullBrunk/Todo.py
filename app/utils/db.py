@@ -28,6 +28,9 @@ class Db:
         self.cursor.execute("INSERT INTO py(`id`, `task`, `done`) VALUES(NULL, ?, ?)", (task, 0))
         self.connection.commit()
 
+    def rm(self, id):
+        self.cursor.execute("DELETE FROM py WHERE id=?", (str(id)))
+        self.connection.commit()
 
 
 

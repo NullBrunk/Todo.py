@@ -6,11 +6,6 @@ import questionary
 def main():
     db = sql()
 
-    print(db.list())
-    print(db.add("Hello, World!"))
-    
-
-
 if __name__ == "__main__":
     main()
 
