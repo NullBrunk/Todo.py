@@ -15,4 +15,4 @@
 
 # TUI Mode
 
-Under development
+![TUImode](https://github.com/NullBrunk/TODO/assets/125673909/c18a6ac3-1908-4252-a3c2-ceb332511733)
