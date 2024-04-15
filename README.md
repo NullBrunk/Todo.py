@@ -5,7 +5,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/TODO?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/TODO?style=for-the-badge)
 ![repo size](https://img.shields.io/github/repo-size/NullBrunk/TODO?style=for-the-badge)
-
 </div>
 
 # 💻 CLI Mode
