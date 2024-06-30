@@ -9,6 +9,9 @@
 
 # 💻 CLI Mode
 
+> [!INFO]
+> The questionnary dependency is not required when using this mode
+
 ![CLI_mode](https://github.com/NullBrunk/TODO/assets/125673909/2aa68935-0601-46e7-8902-a3729897bbe7)
 
 # 🖥️ TUI Mode
