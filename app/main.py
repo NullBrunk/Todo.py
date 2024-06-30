@@ -4,8 +4,11 @@ from utils.help import *
 from sty import ef, rs
 from os import system
 from sys import argv
-import questionary
 
+try:
+    import questionary
+except:
+    pass
 
 def ls(tasks: list):
     if len(tasks) == 0:
