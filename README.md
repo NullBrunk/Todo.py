@@ -10,18 +10,21 @@
 # 💻 CLI Mode
 
 > [!NOTE]
-> The questionnary dependency is not required when using this mode
+> **The questionnary dependency is not required when using this mode.**
 
 ![CLI_mode](https://github.com/NullBrunk/TODO/assets/125673909/2aa68935-0601-46e7-8902-a3729897bbe7)
 
 # 🖥️ TUI Mode
 
 > [!TIP]
-> Use arrow keys to move + enter to select an option
+> **Use arrow keys to move + enter to select an option.**
 
 ![TUImode](https://github.com/NullBrunk/TODO/assets/125673909/c18a6ac3-1908-4252-a3c2-ceb332511733)
 
 # ⚒️ Installation
+
+> [!TIP]
+> **An auto install script is available.**
 
 ```bash
 git clone https://github.com/NullBrunk/PyTodo
