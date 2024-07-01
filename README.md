@@ -17,7 +17,7 @@
 # 🖥️ TUI Mode
 
 > [!TIP]
-> **Use arrow keys to move + enter to select an option.**
+> Use arrow keys to move + enter to select an option.
 
 ![TUImode](https://github.com/NullBrunk/TODO/assets/125673909/c18a6ac3-1908-4252-a3c2-ceb332511733)
 
