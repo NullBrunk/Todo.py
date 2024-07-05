@@ -24,7 +24,7 @@
 > **An auto install script is available.**
 
 ```bash
-git clone https://github.com/NullBrunk/PyTodo
-cd PyTodo
+git clone https://github.com/NullBrunk/Todo.py
+cd Todo.py
 chmod +x install.sh && ./install.sh
 ```
