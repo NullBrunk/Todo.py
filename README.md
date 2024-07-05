@@ -1,16 +1,13 @@
 <div align="center">
   
-# TODO
+# Todo.py
  
-![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/TODO?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/TODO?style=for-the-badge)
-![repo size](https://img.shields.io/github/repo-size/NullBrunk/TODO?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/Todo.py?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/Todo.py?style=for-the-badge)
+![repo size](https://img.shields.io/github/repo-size/NullBrunk/Todo.py?style=for-the-badge)
 </div>
 
 # 💻 CLI Mode
-
-> [!NOTE]
-> The questionnary dependency is not required when using this mode.
 
 ![CLI_mode](https://github.com/NullBrunk/TODO/assets/125673909/2aa68935-0601-46e7-8902-a3729897bbe7)
 
