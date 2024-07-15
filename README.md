@@ -3,7 +3,7 @@
 # Todo.py
 
 
-[![My Skills](https://skillicons.dev/icons?i=python,sqlite&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,sqlite&theme=dark)](https://skillicons.dev)
  
 ![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/Todo.py?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/Todo.py?style=for-the-badge)
