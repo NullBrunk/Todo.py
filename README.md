@@ -2,9 +2,8 @@
   
 # Todo.py
 
-![python](https://github.com/user-attachments/assets/4a99d49c-df04-4e62-b51a-274759c561ff)
-![sqlite](https://github.com/user-attachments/assets/c50fcd71-e626-4d76-b6ec-4e6e3bbbc645)
 
+[![My Skills](https://skillicons.dev/icons?i=python,sqlite&theme=light)](https://skillicons.dev)
  
 ![GitHub top language](https://img.shields.io/github/languages/top/NullBrunk/Todo.py?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NullBrunk/Todo.py?style=for-the-badge)
